@@ -23,8 +23,8 @@ The hills are alive
 		select when explicit sung song re#god#
 
 		fired {
-			raise explicit event
-			raise found_hymn event
+			raise explicit event 'generic';
+			raise found_hymn event 'generic';
 		}
 	}
 }
