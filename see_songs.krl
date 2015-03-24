@@ -18,4 +18,13 @@ The hills are alive
 			raise explicit event 'sung' with song = val
 		}
 	}
+
+	rule find_hymn is active {
+		select when explicit sung song re#god#
+
+		fired {
+			raise explicit event
+			raise found_hymn event
+		}
+	}
 }
