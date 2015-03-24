@@ -25,6 +25,7 @@ The hills are alive
 		fired {
 			raise explicit event 'generic';
 			raise found_hymn event 'generic';
+			log "match with god";
 		}
 	}
 }
