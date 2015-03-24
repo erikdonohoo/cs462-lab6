@@ -44,7 +44,7 @@ Dont drop the song store data BASS
 	}
 
 	rule collect_hymns is active {
-		select when explicit found_hymn "(.*)" setting(val)
+		select when explicit found_hymn hymn "(.*)" setting(val)
 
 		pre {
 			hymns = ent:hymns || [];
