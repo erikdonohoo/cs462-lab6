@@ -20,7 +20,7 @@ A first ruleset for the Quickstart
   rule hello_world is active {
     select when echo hello
     send_directive("say") with
-      something = "Hello World";
+      something = hello("bro");
   }
 
 }
