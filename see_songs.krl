@@ -10,7 +10,7 @@ The hills are alive
 	}
 
 	rule songs is active {
-		select when echo message input "(.*)" setting (val)
+		select when echo message msg_type re#song# input "(.*)" setting (val)
 		send_directive("sing") with
 			song = val
 	}
